@@ -1,0 +1,21 @@
+CREATE TABLE Books(
+    id INTEGER AUTO_INCREMENT NOT NULL,
+    books VARCHAR(255) NOT NULL,
+    image_url VARCHAR(255) NOT NULL,
+    datefrom VARCHAR(255) NOT NULL,
+    dateto VARCHAR(255) NOT NULL,
+
+    PRIMARY KEY (id)
+);
+
+
+CREATE TABLE User(
+    userId INTEGER AUTO_INCREMENT NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    PRIMARY KEY (userId)
+);
+
+
+
+

@@ -1,0 +1,30 @@
+
+
+#body{
+    background-image: url("https://media.istockphoto.com/id/1203011577/vector/newspaper-with-old-grunge-vintage-unreadable-paper-texture-background.jpg?s=612x612&w=0&k=20&c=b16KyYgiKLgpjf1Z18HDLjD4z3QfDB31e3tVgk-GoYk=");
+}
+
+.header{
+    margin-left: 40%;
+
+}
+
+#bookTitle{
+    font-size: 25px;
+}
+
+
+.spacer-row {
+    height: 1px;
+}
+
+#logout{
+    margin-left: 80%;
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+
+#feilmeldingDato{
+    color: red;
+}

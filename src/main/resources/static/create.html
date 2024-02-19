@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="create.css"/>
+    <script src="create.js"></script>
+
+
+    <style>
+        body{
+            margin-left: 500px;
+            margin-top: 50px;
+        }
+
+        #create{
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+
+
+
+<h1>Create user</h1>
+
+<div class="container">
+    <div class = row>
+        <div class="col-md-4">
+            <form class="form">
+
+
+                <div class="form-group" >
+            <label for="email">Email</label><br>
+            <input type="text" id="email" class="form-control" onchange="validerEmail()"/>
+                    <p id="fieldforemail"></p>
+                </div>
+
+
+                <div class="form-group" >
+            <label for="password">Password</label><br>
+            <input type="text" id="password" class="form-control" onchange="validerPassword()" required />
+                    <p id="fieldforpassword"></p>
+                </div>
+
+
+
+            </form>
+
+        <button id="create" class="btn btn-success" onclick="create()">Create</button>
+
+        <div id="wrongCreate" style="color: red"></div>
+
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
