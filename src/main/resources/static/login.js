@@ -17,12 +17,12 @@ function login() {
     //If data = if a person accessed the index.html with the data of a username + password from the database, if not then
     //A html will popup that says "You need to log in"
 
-    if (inputvalidation(User)){
+    if (inputvalidation(User)){ //User er det jeg skriver inn i inputfield, og data er infoen inni databasen som sammenlignes
     $.get("/login", User, function(data) {
         if(data) {
 
          //If user is not logged in, clicking on "log in" won't navigate to index.html
-            $.get("/confirmLogin", function(loggedIn) {
+            $.get("/confirmLogin", function(loggedIn) { //data over --> Så skal jeg med get request endre session attributten til loggedIn
                 if(loggedIn) {
             window.location.href = "allebøker.html";
         } else {
